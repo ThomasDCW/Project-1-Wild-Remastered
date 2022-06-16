@@ -23,9 +23,9 @@ const datas = [
   },
   {
     id: 4,
-    label: "Du sale",
+    label: "Manger liquide",
     picture: "src/assets/home/mangerliquide.jpg",
-    link: "/dusale",
+    link: "/mangerliquide",
   },
 ];
 export default function NavigationHome() {
