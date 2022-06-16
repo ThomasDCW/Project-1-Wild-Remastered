@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export default styled.article`
-  width: 16rem;
-  height: 400px;
+  width: 18rem;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
