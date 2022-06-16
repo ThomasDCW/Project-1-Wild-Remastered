@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export default styled.article`
   width: 18rem;
-  height: 500px;
+  height: 432px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
