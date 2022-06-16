@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export default styled.article`
-  width: 18rem;
-  height: 432px;
+  width: 16rem;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -12,6 +12,10 @@ export default styled.article`
   background-image: url(${(picture) => picture.bg});
   background-position: center;
   background-size: cover;
+  cursor: pointer;
+  :hover {
+    transform: scale(1.1);
+  }
   h1 {
     width: 100%;
     display: flex;
