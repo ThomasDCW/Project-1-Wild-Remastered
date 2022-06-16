@@ -6,4 +6,7 @@ export default styled.section`
   justify-content: center;
   justify-content: space-evenly;
   align-items: center;
+  a {
+    text-decoration: none;
+  }
 `;
