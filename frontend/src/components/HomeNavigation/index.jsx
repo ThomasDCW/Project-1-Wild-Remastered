@@ -1,40 +1,28 @@
-import HomeCard from "@components/HomeCard";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
+import HomeCard from "@components/HomeCard";
 import SNavigationHome from "./style";
 
-const datas = [
-  {
-    id: 1,
-    label: "Du sale",
-    picture: "src/assets/home/dusale.jpeg",
-    link: "/dusale",
-  },
-  {
-    id: 2,
-    label: "Summer body",
-    picture: "src/assets/home/summerbody.jpg",
-    link: "/summerbody",
-  },
-  {
-    id: 3,
-    label: "Pas le temps",
-    picture: "src/assets/home/pasletemps.jpg",
-    link: "/pasletemps",
-  },
-  {
-    id: 4,
-    label: "Manger liquide",
-    picture: "src/assets/home/mangerliquide.jpg",
-    link: "/mangerliquide",
-  },
-];
 export default function NavigationHome() {
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:5000/categories").then(({ data }) => {
+      setCategories(data);
+    });
+  }, []);
+
   return (
     <SNavigationHome>
-      {datas.map((data) => {
+      {categories.map((categorie) => {
         return (
-          <Link to={data.link}>
-            <HomeCard key={data.id} label={data.label} picture={data.picture} />
+          <Link to={categorie.link} key={categorie.id}>
+            <HomeCard
+              key={categorie.id}
+              label={categorie.label}
+              picture={categorie.picture}
+            />
           </Link>
         );
       })}
