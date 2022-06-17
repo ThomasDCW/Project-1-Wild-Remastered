@@ -19,6 +19,7 @@ export default styled.article`
     filter: none;
   }
   h1 {
+    letter-spacing: 0.1em;
     width: 100%;
     height: 48px;
     display: flex;

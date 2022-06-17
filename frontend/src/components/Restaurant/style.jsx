@@ -5,37 +5,43 @@ export default styled.main`
   color: #ffffff;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  min-height: 100vh;
   h1 {
+    padding: 0.8em;
+    letter-spacing: 0.3em;
+    text-align: center;
     font-weight: bold;
-    padding: 0.4em;
-    margin-left: 8vh;
-    font-size: 4rem;
+    font-size: 3rem;
     -webkit-text-stroke: 2px black;
   }
   article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4vh;
+    padding: 1vh;
     .picturecontainer {
       img {
-        margin: 2vw;
+        margin: 2.1vw;
         height: 300px;
         width: 300px;
         border-radius: 50%;
         border: 2px solid black;
-        box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+        box-shadow: rgb(0, 0, 0) 0px 20px 30px;
       }
     }
     .infoscontainer {
-      width: 80%;
+      width: 92%;
       p {
+        line-height: 1.6em;
+        letter-spacing: 0.2em;
         text-align: justify;
-        font-size: 2.5em;
+        font-size: 1.4em;
+        margin-bottom: 1.2em;
       }
       h2 {
-        margin-top: 1em;
-        font-size: 1.5em;
+        font-size: 1.6em;
+        line-height: 1.8em;
+        letter-spacing: 0.4em;
       }
     }
   }
