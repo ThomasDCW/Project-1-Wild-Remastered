@@ -1,11 +1,17 @@
 const express = require("express");
 
-const { ItemController, CategorieController } = require("./controllers");
+const {
+  ItemController,
+  CategorieController,
+  RestaurantController,
+} = require("./controllers");
 
 const router = express.Router();
 
 // Categories routes
-router.get("/Categories", CategorieController.browse);
+router.get("/categories", CategorieController.browse);
+// Restaurants routes
+router.get("/restaurants", RestaurantController.browse);
 
 // items routes by default
 router.get("/items", ItemController.browse);

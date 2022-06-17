@@ -2,7 +2,7 @@ import propTypes from "prop-types";
 import SRestaurant from "./style";
 
 export default function Restaurant({
-  label,
+  title,
   description,
   location,
   phonenumber,
@@ -12,7 +12,7 @@ export default function Restaurant({
 }) {
   return (
     <SRestaurant>
-      <h1>{label}</h1>
+      <h1>{title}</h1>
       <article>
         <div className="infoscontainer">
           <p>{description}</p>
@@ -29,7 +29,7 @@ export default function Restaurant({
   );
 }
 Restaurant.propTypes = {
-  label: propTypes.string.isRequired,
+  title: propTypes.string.isRequired,
   description: propTypes.string.isRequired,
   location: propTypes.string.isRequired,
   phonenumber: propTypes.string.isRequired,
