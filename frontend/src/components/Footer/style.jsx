@@ -9,4 +9,5 @@ export default styled.footer`
   font-family: Georgia, "Times New Roman", Times, serif;
   height: 4vh;
   background-color: #028f21;
+  letter-spacing: 0.2em;
 `;
