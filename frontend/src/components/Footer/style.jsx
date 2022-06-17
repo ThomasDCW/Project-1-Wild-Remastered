@@ -8,5 +8,5 @@ export default styled.footer`
   font-style: italic;
   font-family: Georgia, "Times New Roman", Times, serif;
   height: 4vh;
-  background-color: green;
+  background-color: #028f21;
 `;

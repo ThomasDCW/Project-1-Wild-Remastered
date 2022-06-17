@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export default styled.header`
-  background-color: green;
+  background-color: #028f21;
   display: flex;
   justify-content: center;
   img {
-    height: 8vh;
+    height: 12vh;
   }
 `;
