@@ -17,6 +17,13 @@ class CategorieManager extends AbstractManager {
       ]
     );
   }
+
+  findRestaurant(id) {
+    return this.connection.query(
+      `SELECT * FROM P1.restaurant WHERE categorie_id=?`,
+      [id]
+    );
+  }
 }
 
 module.exports = CategorieManager;
