@@ -10,8 +10,10 @@ const router = express.Router();
 
 // Categories routes
 router.get("/categories", CategorieController.browse);
+
 // Restaurants routes
 router.get("/restaurants", RestaurantController.browse);
+router.get("/restaurants/:id", RestaurantController.browse);
 
 // items routes by default
 router.get("/items", ItemController.browse);
